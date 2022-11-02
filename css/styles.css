@@ -80,6 +80,22 @@
    display: flex;
    align-items: center;
 }
+.nav .link.current{position: relative;}
+.nav .link.current::before{position: absolute;
+  content: "";
+width: 100%;
+height: 4px;
+border-radius: 2px;
+bottom: 0;
+left: 0;
+background-color: var(--accent-color);}
+.nav .link:hover::before,
+.nav .link:focus::before {
+  width: 100%;}
+
+.nav .link:hover,
+ .nav .link:focus {
+    color: var(--accent-color);}
 .nav{
    display: flex;
    align-items: center;
@@ -105,10 +121,6 @@
    padding-bottom: 32px;
    display: block;}
 
- .site-nav .link:hover,
- .site-nav .link:focus {
-    color: var(--accent-color);}
-
  .site-nav .link.current{ color: var(--accent-color);
    padding-top: 32px;
    padding-bottom: 32px;}
@@ -130,6 +142,9 @@
 display: flex;
 margin-left: auto;}
 
+  .contact-nav .link{display: flex;
+  justify-items: center;}
+  
 .contact-nav .item+ .item{ margin-left: 50px;}
 .email-svg{justify-self: baseline;
   color: rgba(117, 117, 117, 1);
@@ -139,10 +154,9 @@ margin-left: auto;}
   text-align: center;
   justify-content: center;}
   .email-svg{fill: currentColor;}
-  .email-svg:hover,
-  .email-svg:focus{ color: var(--accent-color);
-  background-color: var(--primary-white-color);}
-
+  .contact-nav .link:hover .email-svg,
+  .contact-nav .link:focus .email-svg{fill: var(--accent-color);}
+  
  /* hero */
  .hero{ 
    text-align: center;
@@ -334,7 +348,8 @@ margin-bottom: 30px;}
 .icon-symbol{fill: currentColor;}
  .social-links{ display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+   gap: 10px;}
 
  /* четверта секція Постійні клієнти */
 
@@ -441,12 +456,18 @@ gap: var(--indent);}
           margin-bottom: 20px;
           margin-top: 4px;
           margin-left: 24px;}
-          .portfolio-card:hover,
+           .portfolio-card:hover,
           .portfolio-card:focus {
             border: 1px solid #eeeeee;
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
               1px 4px 6px rgba(0, 0, 0, 0.16);
           }
+          /* .flex-container .link:hover,
+          .flex-container .link:focus{
+            border: 1px solid #eeeeee;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);} */
+         
  /* footer */
  .footer{background-color: rgba(47, 48, 58, 1);
 margin-top: 0px;
