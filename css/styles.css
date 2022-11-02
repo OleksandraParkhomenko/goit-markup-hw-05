@@ -81,7 +81,7 @@
    align-items: center;
 }
 .nav .link.current{position: relative;}
-.nav .link.current::before{position: absolute;
+.nav .link.current::after{position: absolute;
   content: "";
 width: 100%;
 height: 4px;
@@ -89,8 +89,8 @@ border-radius: 2px;
 bottom: 0;
 left: 0;
 background-color: var(--accent-color);}
-.nav .link:hover::before,
-.nav .link:focus::before {
+.nav .link:hover::after,
+.nav .link:focus::after {
   width: 100%;}
 
 .nav .link:hover,
@@ -290,6 +290,40 @@ justify-content: center;}
  підставлена сітка*/
  .section-activity{ 
 padding-bottom: 94px;}
+
+.subtitle-activity{  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color:var(--primary-white-color);
+}
+
+.pic-item.activity{position: relative;}
+
+.subtitle-activity{color: rgba(255, 255, 255, 1);
+width: 100%;
+height:70px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1, 14px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+right: 0;
+transform: translate(0, 33%);
+}
+.pic-item.activity::before{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  opacity: 1;
+}
+
 
 /* команда третя секція */
 .section-positions {
