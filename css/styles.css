@@ -605,11 +605,11 @@ padding-bottom: 60px;}
  }
  .modal{ 
   min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-position: sticky;
-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  width: 100%;
 }
 
  .modal-body{ position: relative;
