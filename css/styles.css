@@ -502,11 +502,14 @@ gap: var(--indent);}
             overflow: hidden;
            
           }
-          
+          .link-card:hover .portfolio-overlay,
+          .link-card:focus .portfolio-overlay {
+            transform: translateY(-100%);}
+/*           
           .pic-item:hover .portfolio-overlay,
           .pic-item:focus .portfolio-overlay {
             transform: translateY(-100%);
-          }
+          } */
           .portfolio-overlay{ padding: 63px 24px;
             background-color:rgba(33, 150, 243, 0.9);
             position: absolute;
